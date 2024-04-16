@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com responsividade</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        .conteiner-menu{
+            background-color: blueviolet;
+        }
+
+        .menu{
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            background-color: blueviolet;
+            padding: 10px;
+        }
+
+        .menu li{
+            list-style: none;
+        }
+
+        @media (max-width: 600px) {
+            .menu{
+                flex-direction: column;
+            }
+            .titulo{
+                text-align: center;
+            }
+        }
+
+        .menu li a
+        
+        .menu li a{
+            padding: 10px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .menu li a:hover{
+            background-color: white;
+            color: blueviolet;
+        }
+
+        .titulo{
+            padding: 10px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .conteiner-conteudo{
+            background-color: blueviolet;
+        }
+
+        .conteudo{
+            max-width: 1200px;
+            margin: 0 auto;
+            line-height: 1.5;
+            text-align: justify;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="conteiner-menu">
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+
+    <h1 class="titulo">Bem vindo(a)</h1>
+
+    <div class="conteiner-conteudo">
+        <div class="conteudo">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis soluta, ullam nam atque sit minima autem aspernatur id magnam maxime veniam placeat excepturi eos maiores fuga fugit expedita ipsa cum.
+            Itaque architecto ipsa repellendus quas fugit cupiditate, iure est, corporis tenetur ducimus vitae nisi autem doloremque nostrum corrupti modi? Dolore dolorem quam accusamus quisquam. Eos delectus facilis earum repellendus amet.
+            Illo explicabo aliquam accusantium alias a nesciunt ut obcaecati blanditiis beatae necessitatibus dolorem repellat, nostrum quae velit nisi, enim eius ullam sequi deserunt. Aspernatur tenetur minus aliquid dolor! Quia, distinctio?
+            Veritatis temporibus dolorem explicabo eius cupiditate assumenda odit impedit omnis. Accusamus autem fugit pariatur tempora molestias ipsum qui, repellat velit, eos nostrum veniam. Saepe hic nam quae ipsum. Modi, mollitia.
+            Libero corporis aut minus omnis aliquid, magnam tempore, quod assumenda hic quam nisi praesentium earum, architecto vitae! Inventore quo minima magnam officiis placeat dicta, eum quasi quibusdam, fuga, unde sint.
+        </div>
+    </div>
+</body>
+</html>
